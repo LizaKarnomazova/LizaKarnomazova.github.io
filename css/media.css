@@ -1,0 +1,93 @@
+@media screen and (min-width: 1000px) {
+    .icon-navigation {
+        display: none;
+    }
+
+    .navigation__list {
+        flex-wrap: wrap;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .rightDivider {
+        margin-right: 20px;
+    }
+
+    .page-title__icons {
+        display: none;
+    }
+
+    .page-title__title {
+        gap: 25px;
+    }
+
+    .navigation {
+        padding-left: 25px;
+    }
+
+    .main {
+        padding: 0 25px;
+    }
+
+    .article {
+        gap: 20px;
+    }
+
+    .article__info {
+        flex-basis: 60%;
+    }
+
+    .navigation__list::after {
+        background: linear-gradient(to right, rgba(255,255,255,0) 90%, rgba(248,248,248,1) 100%);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .icon-navigation__callChatProfile {
+        display: none;
+    }
+
+    .leftDivider {
+        display: none;
+    }
+
+    .rightDivider {
+        margin-left: 5px;
+    }
+
+    .article {
+        flex-wrap: wrap;
+    }
+
+    .article__info {
+        flex-basis: 100%
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .icon-navigation {
+        padding-left: 15px;
+    }
+
+    .page-title__title {
+        gap: 15px;
+    }
+
+    .navigation {
+        padding-left: 15px;
+    }
+
+    .main {
+        padding: 0 15px;
+    }
+
+    .article__text {
+        max-height: 90px;
+        line-height: 18px;
+    }
+
+    aside {
+        margin: 0 -15px;
+    }
+}
