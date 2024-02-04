@@ -43,7 +43,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 530px) {
     .icon-navigation__callChatProfile {
         display: none;
     }
@@ -62,6 +62,10 @@
 
     .article__info {
         flex-basis: 100%
+    }
+
+    aside {
+        margin: 0 -25px;
     }
 }
 
