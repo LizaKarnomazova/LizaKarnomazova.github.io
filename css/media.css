@@ -56,16 +56,17 @@
         margin-left: 5px;
     }
 
+    .main {
+        padding: 0;
+    }
+
     .article {
         flex-wrap: wrap;
     }
 
     .article__info {
-        flex-basis: 100%
-    }
-
-    aside {
-        margin: 0 -25px;
+        flex-basis: 100%;
+        margin: 0 25px;
     }
 }
 
@@ -83,7 +84,7 @@
     }
 
     .main {
-        padding: 0 15px;
+        padding: 0;
     }
 
     .article__text {
@@ -91,7 +92,7 @@
         line-height: 18px;
     }
 
-    aside {
-        margin: 0 -15px;
+    .article__info {
+        margin: 0 15px;
     }
 }
