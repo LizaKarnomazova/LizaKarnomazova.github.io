@@ -135,7 +135,7 @@ p {
     padding-top: 0;
     padding-left: 40px;
 
-    overflow: auto;
+    overflow: clip;
 }
 
 .navigation__list {
