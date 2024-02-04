@@ -175,17 +175,17 @@ p {
 
 /* scrollbar */
 
-        #scrollbar {
+    .scrollbar {
     overflow-x: scroll;
     overscroll-behavior-inline: contain;
-}
+    }
 
-    #scrollbar::-webkit-scrollbar {
+    .scrollbar::-webkit-scrollbar {
         height: 5px;
         background-color: #F8F8F8;
     }
 
-    #scrollbar::-webkit-scrollbar-thumb {
+    .scrollbar::-webkit-scrollbar-thumb {
         border-radius: 3px;
         background-color: #e1e3e6;
     }
