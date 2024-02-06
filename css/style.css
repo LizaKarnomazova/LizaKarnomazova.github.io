@@ -108,7 +108,7 @@ p {
     width: 4px;
 }
 
-.page-title__title__text {
+.page-title__text {
     font-size: 28px;
 }
 
@@ -117,7 +117,7 @@ p {
     gap: 40px;
 }
 
-.page-title__icons__icon {
+.page-title__icon {
     display: flex;
     gap: 10px;
     align-items:center;
