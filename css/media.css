@@ -7,6 +7,10 @@
         flex-wrap: wrap;
         margin-right: 20px;
     }
+
+    .opacity::after {
+        background: linear-gradient(to right, rgba(255,255,255,0) 100%, rgba(248,248,248,1) );
+    }
 }
 
 @media screen and (max-width: 1000px) {
