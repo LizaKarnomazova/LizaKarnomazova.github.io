@@ -1,4 +1,4 @@
-body {
+.body {
     font-family: TT Lakes;
     margin: 0 auto;
     padding: 0;
@@ -6,27 +6,14 @@ body {
     background-color: #F8F8F8;
 }
 
-ul {
-    list-style-type: none;
+.paragraph {
     margin: 0;
     padding: 0;
 }
 
-a {
+.link {
     text-decoration: none;
     color: black;
-    margin: 0;
-    padding: 0;
-}
-
-button {
-    font-family: TT Lakes;
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-}
-
-p {
     margin: 0;
     padding: 0;
 }
@@ -35,6 +22,7 @@ p {
 .icon-navigation {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
     background-color: #FFFFFF;
     padding: 18.6px 24px;
     align-items: center;
@@ -46,6 +34,8 @@ p {
 }
 
 .logo {
+    display: block;
+    margin-right: auto;
     width: 96.55px;
     height: 50.81px;
 }
@@ -54,36 +44,48 @@ p {
     width: 2px;
     background: #EAEAEA;
     border-radius: 1px;
-    margin: 4px 5px 4px 20px;
+    margin: 4px 0;
 }
 
-.icon-navigation {
-    display: flex;
-    gap: 15px;
+.icon-navigation__button {
+    font-family: TT Lakes;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: #Ffffff;
+}
+
+.icon-navigation__button:hover {
+    transform: scale(1.2);
 }
 
 .icon-navigation__leftSide {
     display: flex;
-}
-
-.icon-navigation__middleSide {
-    margin-right: auto;
-    max-height: 50.81px;
+    max-height: 40px;
+    gap: 20px;
 }
 
 .icon-navigation__rightSide {
     display: flex;
     max-height: 40px;
+    gap: 20px;
 }
 
 .icon-navigation__callChatProfile {
     display: flex;
     gap: 15px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .icon-navigation__repairStatus {
     display: flex;
     gap: 15px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* page-title */
@@ -112,21 +114,34 @@ p {
     font-size: 28px;
 }
 
-.page-title__icons {
+.page-title__buttons {
     display: flex;
-    gap: 40px;
+    gap: 30px;
 }
 
-.page-title__icon {
+.page-title__button {
+    font-family: TT Lakes;
+    font-size: 16px;
     display: flex;
     gap: 10px;
-    align-items:center;
+    align-items: center;
+    border: none;
+    background: #F8F8F8;
+    padding: 5px 5px;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+
+.page-title__button:hover {
+    background: #e1e3e6;
+    border-radius: 20px;
 }
 
 .icon__text {
     font-size: 16px;
     font-weight: 500;
     margin: 0;
+    padding: 0;
 }
 
 /* navigation */
@@ -137,6 +152,9 @@ p {
 }
 
 .navigation__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
@@ -163,15 +181,23 @@ p {
     margin: 0;
 }
 
-    .navigation__item:nth-child(6) {
-        margin-right: auto;
-    }
+.navigation__item:hover {
+   background-color: #FFFFFF;
+   border: 2px solid #B8FFEC;
+   border-radius: 5px;
+}
 
-    .navigation__item_active {
-        background-color: #FFFFFF;
-        border: 2px solid #B8FFEC;
-        border-radius: 5px;
-    }
+.navigation__item:nth-child(6) {
+    margin-right: auto;
+}
+
+.navigation__item--active {
+    background-color: #FFFFFF;
+    border: 2px solid #B8FFEC;
+    border-radius: 5px;
+}
+
+
 
 /* scrollbar */
 
@@ -191,7 +217,7 @@ p {
     }
 
     /* main */
-    .main {
+.main {
     margin-top: 10px;
     padding-left: 40px;
     padding-right: 30px;
@@ -215,6 +241,7 @@ p {
     height: 160px;
     max-width: 100%;
     overflow: hidden;
+    margin-bottom: 5px;
 }
 
 .article__img {
@@ -223,10 +250,11 @@ p {
 }
 
 .article__button {
+    font-family: TT Lakes;
+    font-size: 16px;
+    margin: 0;
     display: flex;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 10px 5px 0;
     align-items: center;
     border: none;
     background: #F8F8F8;
@@ -235,4 +263,5 @@ p {
 
 .article__button:hover {
     background: #e1e3e6;
+    border-radius: 10px;
 }

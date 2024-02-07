@@ -10,11 +10,8 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .rightDivider {
-        margin-right: 20px;
-    }
 
-    .page-title__icons {
+    .page-title__buttons {
         display: none;
     }
 
@@ -73,6 +70,7 @@
 @media screen and (max-width: 400px) {
     .icon-navigation {
         padding-left: 15px;
+        gap: 15px;
     }
 
     .page-title__title {
