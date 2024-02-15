@@ -1,5 +1,5 @@
 @media screen and (min-width: 1000px) {
-    .icon-navigation {
+    .header__content .icon-navigation {
         display: none;
     }
 
@@ -45,7 +45,7 @@
 }
 
 @media screen and (max-width: 530px) {
-    .icon-navigation__callChatProfile {
+    .icon-navigation__rightSide > .icon-navigation__callChatProfile {
         display: none;
     }
 
@@ -72,6 +72,10 @@
 }
 
 @media screen and (max-width: 400px) {
+    .site__menu {
+        width: 100%;
+    }
+
     .icon-navigation {
         padding-left: 15px;
         gap: 15px;
