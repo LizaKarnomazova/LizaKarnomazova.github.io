@@ -19,8 +19,8 @@
         display: none;
     }
 
-    .page-title__title {
-        gap: 25px;
+    .page-title {
+        padding-left: 25px;
     }
 
     .navigation {
@@ -77,8 +77,8 @@
         gap: 15px;
     }
 
-    .page-title__title {
-        gap: 15px;
+    .page-title {
+        padding-left: 15px;
     }
 
     .navigation {
