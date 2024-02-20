@@ -3,10 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/style2.css" />
-    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <title>Услуги и сервисы</title>
 </head>
 <body class="body">
@@ -44,14 +41,20 @@
             </ul>
             <a class="link" href="mailto: mail@cps.com">mail@cps.com</a>
             <a class="link phoneNumber" href="tel: 8 800 890 8900">8 800 890 8900</a>
-            <div>
-                <input type="radio" name="language" id="RU" checked="checked">
-                <label for="RU">RU</label>
-                <input type="radio" name="language" id="EN">
-                <label for="EN">EN</label>
-                <input type="radio" name="language" id="CH">
-                <label for="CH">CH</label>
-            </div>
+            <ul class="ul menu__language">
+                <li>
+                    <input type="radio" name="language" id="RU" checked="checked">
+                    <label for="RU" class="language__text">RU</label>
+                </li>
+                <li>
+                    <input type="radio" name="language" id="EN">
+                    <label for="EN" class="language__text">EN</label>
+                </li>
+                <li>
+                    <input type="radio" name="language" id="CH">
+                    <label for="CH" class="language__text">CH</label>
+                </li>
+            </ul>
         </footer>
     </div>
 </body>
