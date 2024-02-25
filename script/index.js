@@ -23,6 +23,8 @@ if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
     var mySwiper = new Swiper('.swiper-container', {
         loop: true,
         noSwiping: false,
+        slidesPerView: 'auto',
+        spaceBetween: 15,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
