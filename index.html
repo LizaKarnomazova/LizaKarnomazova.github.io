@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/index.css" />
     <title>Услуги и сервисы</title>
 </head>
@@ -12,48 +13,44 @@
             <h2 class="title__text">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h2>
         </header>
         <main class="services__main">
-            <nav class="navigation">
-                <div class="scrollbar">
-                    <ul class="ul services-navigation__list navigation__list--hide">
-                        <li class="services-navigation__item">
+                <div class="swiper-container">
+                    <ul class="ul swiper-wrapper services-navigation__list navigation__list--hide">
+                        <li class="swiper-slide services-navigation__item">
                             <img src="img/bosch.svg" alt="" />
                             <a class="link link__button" href=""></a>
                         </li>
-                        <li class="services-navigation__item">
+                        <li class="swiper-slide services-navigation__item">
                             <img src="img/lenovo.svg" alt="" />
                             <a class="link link__button" href=""></a>
                         </li>
-                        <li class="services-navigation__item">
+                        <li class="swiper-slide services-navigation__item">
                             <img src="img/apple.svg" alt="" />
                             <a class="link link__button" href=""></a>
                         </li>
-                        <li class="services-navigation__item">
+                        <li class="swiper-slide services-navigation__item">
                             <img src="img/lenovo.svg" alt="" />
                             <a class="link link__button" href=""></a>
                         </li>
-                        <li class="services-navigation__item">
+                        <li class="swiper-slide services-navigation__item">
                             <img src="img/lenovo.svg" alt="" />
                             <a class="link link__button" href=""></a>
                         </li>
-                        <li class="services-navigation__item">
+                        <li class="swiper-slide services-navigation__item">
                             <img src="img/lenovo.svg" alt="" />
                             <a class="link link__button" href=""></a>
                         </li>
-                        <li class="services-navigation__item">
+                        <li class="swiper-slide services-navigation__item">
                             <img src="img/lenovo.svg" alt="" />
                             <a class="link link__button" href=""></a>
                         </li>
                     </ul>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <button class="button article__button button-open">
-                    Показать всё
-                </button>
-                <button class="button article__button button-close button__hide">
-                    Скрыть
-                </button>
-            </nav>
+                <button class="button article__button button-readMore"></button>
         </main>
-</div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script/index.js"></script>
+
 </body>
 </html>
