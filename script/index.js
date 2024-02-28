@@ -22,7 +22,9 @@ buttonReadMore.addEventListener('click', function () {
 
 /* swiper */
 
-if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+const breakpoint = window.matchMedia('(max-width:700px)');
+
+if (breakpoint.matches === true) {
     servicesNavigation.classList.add('services-navigation__list--mobile');
     servicesNavigation.classList.remove('navigation__list--hide');
     buttonReadMore.classList.add('element--hide');
@@ -42,3 +44,5 @@ if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         },
     });
 }
+
+    
