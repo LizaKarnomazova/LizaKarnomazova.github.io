@@ -86,38 +86,30 @@ rightSidebarShow('.icon-button--call', '.sidebar__menu--call');
 
 
 /* button-readMore */
+let buttonShow = function (container, buttonText) {
 
-let NavigationContainers = document.querySelectorAll('.article');
-
-NavigationContainers.forEach((navigationContainer) => {
-  let NavigationList = navigationContainer.querySelector('.navigation__list');
+  let navigationContainer = document.querySelector(container);
+  let navigationList = navigationContainer.querySelector('.navigation__list');
   let buttonReadMore = navigationContainer.querySelector('.button-readMore');
 
-  if (NavigationList.classList.contains('article__specification__text') === true) {
-    buttonReadMore.textContent = 'Читать далее';
-  }
-  else {
-    buttonReadMore.textContent = 'Показать всё';
-  }
-  
+  buttonReadMore.textContent = buttonText;
 
   buttonReadMore.addEventListener('click', function () {
-    if (buttonReadMore.textContent === 'Показать всё' || buttonReadMore.textContent === 'Читать далее') {
-      NavigationList.classList.remove('navigation__list--hide');
+    if (buttonReadMore.textContent === buttonText) {
+      navigationList.classList.remove('navigation__list--hide');
       buttonReadMore.classList.add('button-close');
       buttonReadMore.textContent = 'Скрыть';
     }
     else {
-      NavigationList.classList.add('navigation__list--hide');
+      navigationList.classList.add('navigation__list--hide');
       buttonReadMore.classList.remove('button-close');
-      if (NavigationList.classList.contains('article__specification__text') === true) {
-        buttonReadMore.textContent = 'Читать далее';
-      }
-      else {
-        buttonReadMore.textContent = 'Показать всё';
-      }
+      buttonReadMore.textContent = buttonText;
     }
   });
-});
+};
+
+buttonShow('.article__specification__info', 'Читать далее');
+buttonShow('.article__brands', 'Показать все');
+buttonShow('.article__devices', 'Показать все');
 
 console.log('Works!');
