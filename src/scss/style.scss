@@ -626,10 +626,15 @@ input[type="radio"]:checked + label {
     background: linear-gradient(to right, rgba(255,255,255,0) 90%, rgba(248,248,248,1) 100%);
   }
 }
+@media screen and (min-width: 760px) {
+  .prices-navigation__container > .swiper {
+      display: none;
+  }
+}
 
 @media screen and (max-width: 760px) {
   .table__prices {
-      display: none;
+    display: none;
   }
 
   .sidebar__header > .icon-button--close {
@@ -653,7 +658,7 @@ input[type="radio"]:checked + label {
 }
 
 @media screen and (max-width: 530px) {
-  
+
 
   .icon-navigation__rightSide > .icon-navigation__callChatProfile {
     display: none;
@@ -708,7 +713,7 @@ input[type="radio"]:checked + label {
   }
 
   .article__specification__info > .navigation__list--hide {
-      max-height: 90px;
+    max-height: 90px;
   }
 
   .content__footer {

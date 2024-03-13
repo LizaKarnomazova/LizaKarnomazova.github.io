@@ -1,9 +1,7 @@
 
 /* swiper */
 
-let NavigationPrices = document.querySelector('.prices-navigation__container');
 
-const breakpoint = window.matchMedia('(max-width:760px)');
 let SwiperShow = function (container) {
 
   let navigationContainer = document.querySelector(container);
@@ -11,6 +9,8 @@ let SwiperShow = function (container) {
   let NavigationList = navigationContainer.querySelector('.swiper-navigation__list');
   let NavigationItem = NavigationList.querySelectorAll('.swiper-navigation__item');
   let buttonReadMore = navigationContainer.querySelector('.button-readMore');
+
+  const breakpoint = window.matchMedia('(max-width:760px)');
 
   if (breakpoint.matches === true) {
 
@@ -42,9 +42,5 @@ let SwiperShow = function (container) {
 SwiperShow('.article__brands');
 SwiperShow('.article__devices');
 SwiperShow('.article__prices');
-
-if (breakpoint.matches === false) {
-  NavigationPrices.classList.add('element--hide');
-}
 
   
