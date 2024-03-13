@@ -103,8 +103,8 @@ let buttonShow = function (container, buttonText) {
   });
 };
 
-buttonShow('.article__specification__info', 'Читать далее');
 buttonShow('.article__brands', 'Показать все');
 buttonShow('.article__devices', 'Показать все');
+buttonShow('.article__specification__info', 'Читать далее');
 
 console.log('Works!');
