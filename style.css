@@ -459,7 +459,7 @@ input[type="radio"]:checked + label {
     grid-template-columns: 320px minmax(500px, auto);
     justify-content: center; }
   .sidebar__menu--burger {
-    position: relative; }
+    position: sticky; }
   .icon-navigation > .icon-button--close {
     display: none; }
   .content__header .icon-navigation {
