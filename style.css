@@ -319,8 +319,9 @@ input, textarea {
   top: 0;
   display: flex;
   flex-direction: column;
-  height: 100vh;
   background: white;
+  min-height: 752px;
+  height: 100vh;
   z-index: 1; }
 
 .swiper-pagination-bullet {
@@ -336,9 +337,8 @@ input, textarea {
   left: 0; }
 
 .main__menu {
-  margin-top: 30px;
-  margin-bottom: auto;
-  margin-right: auto; }
+  padding-top: 30px;
+  margin-bottom: auto; }
 
 .menu__links {
   display: flex;
@@ -410,10 +410,12 @@ input[type="radio"]:checked + label {
 .sidebar__menu--call, .sidebar__menu--chat {
   position: absolute;
   right: 0;
-  width: 500px; }
+  width: 500px;
+  background: white; }
 
 .sidebar__header {
   position: relative;
+  background: white;
   padding: 0; }
 
 .sidebar__header > .icon-button--close {
@@ -428,6 +430,7 @@ input[type="radio"]:checked + label {
   height: 40px; }
 
 .main__sidebar__menu {
+  background: white;
   padding: 0 30px;
   font-weight: 500;
   display: flex;
@@ -712,12 +715,10 @@ button-readMore:first-child {
 /* brends */
 .swiper {
   position: relative;
-  max-height: 200px;
   padding-bottom: 30px; }
 
 .swiper-navigation__container {
-  position: relative;
-  overflow: hidden; }
+  position: relative; }
 
 .swiper-navigation__list {
   padding: 2px;
