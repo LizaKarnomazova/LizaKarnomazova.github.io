@@ -2,7 +2,11 @@
 import Swiper from 'swiper';
 import { Pagination } from 'swiper/modules';
 Swiper.use([Pagination]);
-
+/*
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+* /
 
 /* swiper */
 

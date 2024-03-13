@@ -563,7 +563,7 @@ input[type="radio"]:checked + label {
   }
 
   .sidebar__menu--burger {
-      position: relative;
+      position: sticky;
   }
 
   .icon-navigation > .icon-button--close {
