@@ -62,17 +62,12 @@ let rightSidebarShow = function (buttonClass, sidebarClass) {
       content.classList.add('element-noScroll');
 
       let buttonClose = sidebar.querySelector('.icon-button--close');
-
+      
       buttonClose.addEventListener('click', function () {
         sidebar.classList.add('element--hide');
         sidebarBurger.classList.remove('decoration-blur');
 
-        if (sidebarBurger.classList.contains('element--hide') === true) {
-          content.classList.remove('decoration-blur');
-          content.classList.remove('element-noScroll');
-        }
-
-        if (breakpoint_min1060.matches === true) {
+        if (sidebarBurger.classList.contains('element--hide') === true || breakpoint_min1060.matches === true) {
           content.classList.remove('decoration-blur');
           content.classList.remove('element-noScroll');
         }
