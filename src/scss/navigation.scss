@@ -1,0 +1,132 @@
+
+/* brends */
+
+.swiper {
+  position: relative;
+}
+
+.swiper-navigation__container {
+  position: relative;
+  overflow: hidden;
+}
+
+.swiper-navigation__list {
+  padding: 2px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+  justify-items: stretch;
+}
+
+.swiper-navigation__list--mobile {
+  grid-auto-flow: column;
+  gap: 0;
+}
+
+.navigation__list--hide {
+  max-height: 160px;
+  overflow: hidden;
+}
+
+.swiper-navigation__item {
+  display: grid;
+  padding: 15px;
+  width: 87%;
+  background: white;
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+}
+
+.brandes-navigation__item {
+  grid-template-columns: 50% 50%;
+  height: 40px;
+}
+
+.brandes-navigation__item > .link__button {
+    justify-self: end;
+}
+
+.swiper-navigation__item--width {
+  width: 220px;
+}
+
+.swiper-navigation__item:hover, .swiper-navigation__item:focus {
+  box-shadow: 0 0 3px 2px #e5e5e5;
+}
+
+.swiper-pagination {
+  position: absolute;
+  transform: translateY(35px);
+}
+
+/* devices */
+
+.devices-navigation__item {
+  grid-template-columns: 80% 20%;
+  height: 125px;
+}
+
+.devices-navigation__item > .link__button {
+  justify-self: end;
+  align-self: end;
+}
+
+/* prices */
+
+.prices-navigation__list {
+    margin-bottom: 10px;
+}
+
+.prices-navigation__item {
+  color: #1B1C21;
+  font-size: 14px;
+  font-weight: 500;
+  grid-template-columns: 40% 60%;
+  grid-template-areas: "service service" "price price" "time link__button";
+  align-items: end;
+  height: 165px;
+}
+
+.service {
+  grid-area: service;
+  align-self: start;
+}
+
+.price {
+  grid-area: price;
+  align-self: center;
+}
+
+.time {
+  grid-area: time;
+}
+
+.link__button-order {
+  grid-area: link__button;
+}
+
+@media screen and (max-width: 1200px) {
+  .swiper-navigation__list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .swiper-navigation__list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+  @media screen and (max-width: 760px) {
+
+    .swiper-navigation__list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+@media screen and (max-width: 530px) {
+  .swiper-navigation__container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}

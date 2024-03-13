@@ -1,34 +1,50 @@
+
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
-Swiper.use([Navigation, Pagination]);
+import { Pagination } from 'swiper/modules';
+Swiper.use([Pagination]);
 
 
 /* swiper */
 
-let servicesMain = document.querySelector('.services__main');
-let servicesNavigation = servicesMain.querySelector('.services-navigation__list');
-let servicesItem = servicesNavigation.querySelectorAll('.services-navigation__item');
-let buttonReadMore = servicesMain.querySelector('.button-readMore');
+let NavigationContainers = document.querySelectorAll('.swiper-navigation__container');
 
-const breakpoint = window.matchMedia('(max-width:700px)');
+NavigationContainers.forEach((navigationContainer) => {
 
-if (breakpoint.matches === true) {
-  servicesNavigation.classList.add('services-navigation__list--mobile');
-  servicesNavigation.classList.remove('navigation__list--hide');
-  buttonReadMore.classList.add('element--hide');
+  let NavigationList = navigationContainer.querySelector('.swiper-navigation__list');
+  let NavigationItem = NavigationList.querySelectorAll('.swiper-navigation__item');
+  let buttonReadMore = navigationContainer.querySelector('.button-readMore');
 
-  for (let i = 0; i < servicesItem.length; i++) {
-    servicesItem[i].classList.add('services-navigation__item--width');
+  let NavigationPrices = document.querySelector('.prices-navigation__container');
+
+  const breakpoint = window.matchMedia('(max-width:760px)');
+
+  if (breakpoint.matches === true) {
+
+    for (let i = 0; i < NavigationItem.length; i++) {
+      NavigationItem[i].classList.add('swiper-navigation__item--width');
+    }
+
+    NavigationList.classList.remove('navigation__list--hide');
+    NavigationList.classList.add('swiper-navigation__list--mobile');
+    
+      buttonReadMore.classList.add('element--hide');
+
+    var mySwiper = new Swiper('.swiper', {
+      loop: true,
+      noSwiping: false,
+      slidesPerView: 'auto',
+      spaceBetween: 35,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    })
   }
+  else {
+    NavigationPrices.classList.add('element--hide');
+  }
+});
 
-  var mySwiper = new Swiper('.swiper-container', {
-    loop: true,
-    noSwiping: false,
-    slidesPerView: 'auto',
-    spaceBetween: 35,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  });
-}
+
+
+  
